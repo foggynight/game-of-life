@@ -66,7 +66,7 @@ public:
 	bool OnUserUpdate(float fElapsedTime) override
 	{
 		// if space not pressed: continue
-		if (!GetKey(olc::Key::SPACE).bHeld)
+		if (GetKey(olc::Key::SPACE).bHeld)
 			return true;
 
 		if ((timer += fElapsedTime) < 0.2f)
