@@ -1,0 +1,12 @@
+*
+!src
+src/*
+
+!.gitignore
+!makefile
+!README.md
+
+!src/*.h
+!src/*.cpp
+
+src/olc*.h
