@@ -1,12 +1,14 @@
+# SPDX-License-Identifier: GPL-2.0
+# Copyright (C) 2020 Robert Coffey
+
 *
+
 !src
-src/*
+!src/*.cpp
+!src/*.h
+src/olc*.h
 
 !.gitignore
-!makefile
+!LICENSE
 !README.md
-
-!src/*.h
-!src/*.cpp
-
-src/olc*.h
+!makefile
