@@ -73,7 +73,7 @@ public:
 		{
 			int n_count = get_neighbors(snap_arr, i);
 
-			if (n_count < 2 ||| n_count > 3)
+			if (n_count < 2 || n_count > 3)
 				main_arr[i] = 0;
 			else if (n_count == 3)
 				main_arr[i] = 1;
