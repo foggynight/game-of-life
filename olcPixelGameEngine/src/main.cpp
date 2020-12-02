@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0
+// SPDX-License-Identifier: GPL-2.0 AND OLC-3
 // Copyright (C) 2020 Robert Coffey
 
 #include <vector>

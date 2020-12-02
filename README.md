@@ -1,17 +1,19 @@
 # game-of-life
 
-Written using the olcPixelGameEngine by Javidx9.
+Various implementations of Conway's Game of Life.
 
 ## License
 
 Copyright (C) 2020 Robert Coffey
 
-This program is licensed under both the GPLv2 license, as well as the OLC-3
-license.
-
-This program is free software: you can redistribute it and/or modify it under
-the terms of the GNU General Public License version 2 as published by the Free
-Software Foundation.
+These programs are licensed under the GNU General Public License version 2 as
+published by the Free Software Foundation.
 
 You should have received a copy of the GNU General Public License version 2
 along with this program. If not, see <https://www.gnu.org/licenses/gpl-2.0>.
+
+In addition to this, programs using external libraries may be subject to
+additional licensing requirements.
+
+Additional information will be included in the directory of each program. See
+the `LICENSES/` directory for copies of referenced licenses.
