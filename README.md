@@ -1,6 +1,9 @@
 # game-of-life
 
-Various implementations of Conway's Game of Life.
+Conway's Game of Life
+
+These are my various implementations of the game, written primarily to learn the
+basics of a given library.
 
 ## Implementations
 
