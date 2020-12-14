@@ -6,4 +6,4 @@ Written using the olcPixelGameEngine by Javidx9.
 
 Copyright (C) 2020 Robert Coffey
 
-This program is licensed under both the GPLv2 and OLC-3 licenses.
+This program is additionally licensed under the OLC-3 license.
