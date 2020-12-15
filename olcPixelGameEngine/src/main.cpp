@@ -10,7 +10,7 @@
 #define SWIDTH  100
 #define PHEIGHT 5
 #define PWIDTH  5
-#define PCOUNT SHEIGHT * SWIDTH
+#define PCOUNT  (SHEIGHT * SWIDTH)
 
 int get_neighbours(std::array<int, PCOUNT> arr, int index)
 {
