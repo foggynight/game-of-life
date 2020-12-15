@@ -12,7 +12,7 @@
 #define PWIDTH  5
 #define PCOUNT SHEIGHT * SWIDTH
 
-int get_neighbors(std::array<int, PCOUNT> arr, int index)
+int get_neighbours(std::array<int, PCOUNT> arr, int index)
 {
 	int count = 0;
 
@@ -71,7 +71,7 @@ public:
 		snap_arr = main_arr;
 		for (int i = 0; i < PCOUNT; ++i)
 		{
-			int n_count = get_neighbors(snap_arr, i);
+			int n_count = get_neighbours(snap_arr, i);
 
 			if (n_count < 2 || n_count > 3)
 				main_arr[i] = 0;
