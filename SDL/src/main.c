@@ -3,16 +3,24 @@
 
 #include <SDL2/SDL.h>
 
-#define FPS 60
+/* General configuration */
+#define FRAMES_PER_SECOND 60
+
+/* Monitor configuration */
+#define MONITOR_WINDOW_START      1
+#define MONITOR_RESOLUTION_WIDTH  1920
+#define MONITOR_RESOLUTION_HEIGHT 1080
 
 int main(void)
 {
-    if (SDL_Init(SDL_INIT_EVERYTHING)) {
+    if (SDL_Init(SDL_INIT_VIDEO)) {
         fprintf(stderr, "Error: SDL_Init: %s\n", SDL_GetError());
         return EXIT_FAILURE;
     }
 
-    SDL_Window *win = SDL_CreateWindow("Game of Life", 0, 0, 640, 480, SDL_WINDOW_SHOWN);
+    SDL_Window *win = SDL_CreateWindow("Game of Life",
+            MONITOR_WINDOW_START * MONITOR_RESOLUTION_WIDTH,
+            0, 640, 480, SDL_WINDOW_SHOWN);
     if (!win) {
         fprintf(stderr, "Error: SDL_CreateWindow: %s\n", SDL_GetError());
         return EXIT_FAILURE;
@@ -40,7 +48,7 @@ int main(void)
 
         SDL_RenderClear(ren);
         SDL_RenderPresent(ren);
-        SDL_Delay(1000 / FPS);
+        SDL_Delay(1000 / FRAMES_PER_SECOND);
     }
 
     SDL_DestroyRenderer(ren);
