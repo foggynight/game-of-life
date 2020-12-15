@@ -8,8 +8,8 @@
 #define FRAMES_PER_SECOND 60                   // Target number of frames to render per second
 #define SLEEP_DELAY (1000 / FRAMES_PER_SECOND) // Number of milliseconds to sleep after updating the screen
 
-#define MONITOR_RESOLUTION_WIDTH  1920
-#define MONITOR_RESOLUTION_HEIGHT 1080
+#define MONITOR_RESOLUTION_WIDTH  1920 // Width in pixels of the user's monitor
+#define MONITOR_RESOLUTION_HEIGHT 1080 // Height in pixels of the user's monitor
 
 static SDL_Window *win;
 static SDL_Renderer *ren;
