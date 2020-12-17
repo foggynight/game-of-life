@@ -2,7 +2,7 @@ CC=clang
 CFLAGS=-Weverything
 LIBS=`sdl2-config --cflags --libs`
 
-SRCS=$(wildcard src/*.c)
+SRCS=$(wildcard src/**.c)
 OBJS=$(SRCS:%.c=%.o)
 PROG=game-of-life
 
