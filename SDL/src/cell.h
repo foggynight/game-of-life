@@ -10,4 +10,7 @@ typedef struct cell {
     struct sl_node_t *neighbours; // List of neighbouring cells
 } cell_t;
 
+void cell_add_neighbour(cell_t *neighbour);
+void cell_update(cell_t *cell);
+
 #endif
