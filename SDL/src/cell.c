@@ -18,5 +18,9 @@ void cell_update(cell_t *target)
 
 static int get_living_neighbours(cell_t *target)
 {
-
+    int count = 0;
+    for (sl_node_t *walk = target->nb_head; walk; walk = walk->next)
+        if (((cell_t *)walk->val)->live)
+            ++count;
+    return count;
 }
