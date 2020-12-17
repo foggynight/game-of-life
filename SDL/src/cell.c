@@ -13,7 +13,8 @@ void cell_add_neighbour(cell_t *target, cell_t *neighbour)
 
 void cell_update(cell_t *target)
 {
-    target->live = target->next;
+    // TODO: Implement Game of Life cell rules
+    target->live = get_living_neighbours(target);
 }
 
 static int get_living_neighbours(cell_t *target)
