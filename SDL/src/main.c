@@ -1,5 +1,8 @@
 #include <stdlib.h>
 
+#define CRL_DEFINE
+#include "crl/single_link.h"
+
 #include "screen.h"
 
 #define INITIAL_MONITOR 1

@@ -3,7 +3,7 @@
  * Generic singly linked list implementation, requires a head and tail
  * pointer which are to be initialized to NULL.
  *
- * File Version: 0.1.0
+ * File Version: 0.1.1
  * Last Updated: 2020-12-17
  *
  * This file is part of the crl library:
@@ -49,6 +49,8 @@ void sl_add_node(sl_node_t **head, sl_node_t **tail, sl_node_t *node);
  * @param tail {sl_node_t **}: Pointer to a pointer to the tail of the list
  * @param node {sl_node_t *}:  Pointer to the node to remove from the list */
 void sl_remove_node(sl_node_t **head, sl_node_t **tail, sl_node_t *node);
+
+#ifdef CRL_DEFINE
 
 sl_node_t *sl_create_node(void)
 {
@@ -136,4 +138,5 @@ void sl_remove_node(sl_node_t **head, sl_node_t **tail, sl_node_t *node)
     }
 }
 
-#endif
+#endif // CRL_DEFINE
+#endif // CRL_LIST_SINGLE_LINK_H_
