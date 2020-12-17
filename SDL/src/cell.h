@@ -5,12 +5,13 @@
 
 /* Struct representing a cell. */
 typedef struct cell {
-    int live; // Is the cell alive this turn
-    int next; // Should the cell be alive next turn
-    struct sl_node_t *neighbours; // List of neighbouring cells
+    int live;           // Is the cell alive this turn
+    int next;           // Should the cell be alive next turn
+    sl_node_t *nb_head; // Head of the list of neighbouring cells
+    sl_node_t *nb_tail; // Tail of the list of neighbouring cells
 } cell_t;
 
-void cell_add_neighbour(cell_t *neighbour);
-void cell_update(cell_t *cell);
+void cell_add_neighbour(cell_t* target, cell_t *neighbour);
+void cell_update(cell_t *target);
 
 #endif
