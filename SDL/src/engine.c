@@ -1,3 +1,6 @@
+// Copyright (C) 2020 Robert Coffey
+// Released under the GPLv2 license
+
 #include <string.h>
 
 #include "cell.h"

@@ -1,5 +1,9 @@
-// Copyright (C) 2020 Robert Coffey
-// Licensed under the GNU GPLv2 and OLC-3
+/* --- game-of-life/olcPixelGameEngine ---
+ *
+ * Conway's Game of Life implementing using the olcPixelGameEngine.
+ *
+ * Copyright (C) 2020 Robert Coffey
+ * Released under the GPLv2 and OLC-3 licenses */
 
 #include <vector>
 
