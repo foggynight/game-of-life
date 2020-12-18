@@ -9,19 +9,19 @@ void engine_setup(void)
 {
     /* Add neighbours to each cell */
     for (int i = 0; i < CELL_COUNT; ++i) {
-        /* Column to the left of the cell */
+        /* Column to the left */
         if (i%CELL_ARRAY_WIDTH > 0) {
 
         }
-        /* Column to the right of the cell */
+        /* Column to the right */
         else if (i%CELL_ARRAY_WIDTH < CELL_ARRAY_WIDTH-1) {
 
         }
-        /* Row above the cell */
+        /* Cell directly above */
         else if (i >= CELL_ARRAY_WIDTH) {
 
         }
-        /* Row below the cell */
+        /* Cell directly below */
         else if (i < CELL_ARRAY_WIDTH * (CELL_ARRAY_HEIGHT-1)) {
 
         }
